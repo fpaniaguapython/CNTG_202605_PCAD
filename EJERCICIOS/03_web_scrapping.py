@@ -1,7 +1,7 @@
 import requests
-from bs4 import BeautifulSoup
 
 from bs4 import BeautifulSoup
+
 import re
 
 def obtener_pib_fmi_singapur(html: str) -> str | None:
