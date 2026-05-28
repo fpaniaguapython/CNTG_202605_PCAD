@@ -1,0 +1,12 @@
+[
+    {
+        "nombre":"Ronaldo",
+        "dorsal":7,
+        "salario":7000000
+    },
+    {
+        "nombre":"Messi",
+        "dorsal":10,
+        "salario":8000000
+    }
+]
