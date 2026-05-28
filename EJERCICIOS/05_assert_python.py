@@ -3,8 +3,8 @@ def sumar(numero_1: int, numero_2: int) -> int:
     Sumar dos números enteros.
 
     Parámetros:
-    - numero_1 : primer sumando
-    - numero_2 : segundo sumando
+    - numero_1 : primer sumando, debe ser positivo
+    - numero_2 : segundo sumando, debe ser positivo
 
     Return:
     - Suma de los dos parámetros
@@ -15,3 +15,5 @@ def sumar(numero_1: int, numero_2: int) -> int:
     return resultado
 
 sumar(5, 2)
+
+
