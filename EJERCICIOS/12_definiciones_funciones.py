@@ -30,4 +30,15 @@ calcular_importe(10,15,10,12,18,50)
 # Llamar a la función y mostrar el valor de la lista después
 # de la llamada
 
+def agregador_numero(lista: list, numero: int) -> None:
+    lista.append(numero)
+
+valores = [10, 8, 9, 5]
+numero = 15
+agregador_numero(valores, numero) # Argumentos posicionales (indexed)
+agregador_numero(lista=valores, numero=numero) # Keywords arguments
+agregador_numero(numero=numero, lista=valores) # Keywords arguments
+
+
+
 
