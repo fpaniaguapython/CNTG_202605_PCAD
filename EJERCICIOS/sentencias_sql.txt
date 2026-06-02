@@ -1,0 +1,27 @@
+- Nombre y apellidos de los empleados con categoría 'Ingeniero de Software'
+SELECT nombre, apellidos FROM empleados WHERE categoria_programacion='Ingeniero de Software'
+
+- Nombre, apellidos y categoria de los empleados con salarios >40.000
+SELECT nombre, apellidos FROM empleados WHERE salario>40000
+
+- Todos los ingenieros de software de Barcelona
+SELECT * FROM empleados WHERE categoria_programacion='Ingeniero de Software' AND ciudad='Barcelona'
+
+-Todos los empleados con salarios <20000 que trabajen en Madrid
+SELECT * FROM empleados WHERE salario<20000 and ciudad='Madrid'
+
+- Obtener las categorías distintas
+SELECT DISTINCT(categoria_programacion) FROM empleados
+SELECT DISTINCT(categoria_programacion) as CATEGORIAS FROM empleados
+
+- Obtener la media de salarios de los ingenieros de software
+SELECT avg(salario) FROM empleados WHERE categoria_programacion='Ingeniero de Software'
+SELECT avg(salario) AS MEDIA_SALARIO FROM empleados WHERE categoria_programacion='Ingeniero de Software'
+
+- Obtener la suma total de los salarios de Sevilla
+SELECT sum(salario) AS SUMA_TOTAL from empleados WHERE ciudad='Sevilla'
+
+- Obtener todos los datos de los Fernandos ordenados por salario de Mayor a menor
+SELECT * FROM empleados WHERE nombre='Fernando' ORDER BY salario (por defecto, ascendente)
+SELECT * FROM empleados WHERE nombre='Fernando' ORDER BY salario ASC
+SELECT * FROM empleados WHERE nombre='Fernando' ORDER BY salario DESC
