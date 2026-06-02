@@ -1,4 +1,5 @@
 import sqlite3
+
 DB_NAME='db_empleados_optimizado.sqlite3'
 
 class Empleado:
