@@ -3,7 +3,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 # Leer CSV
-df = pd.read_csv("./datos/datos_ventas_ancho.csv")
+df = pd.read_csv("./datos_ventas_ancho.csv")
 
 # Convertir a formato largo
 df_long = df.melt(
