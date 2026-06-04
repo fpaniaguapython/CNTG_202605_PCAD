@@ -11,7 +11,9 @@ df_long = df.melt(
     var_name="comunidad",
     value_name="ventas"
 )
-df_long.head()
+print(df.head())
+
+df_long.to_csv('datos_ventas_alto.csv')
 
 # Gráfico
 plt.figure(figsize=(14, 6))
